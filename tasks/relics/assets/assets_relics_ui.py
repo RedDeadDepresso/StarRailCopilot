@@ -5,13 +5,6 @@ from module.base.button import Button, ButtonWrapper
 
 ENHANCE_CHECK = ButtonWrapper(
     name='ENHANCE_CHECK',
-    cn=Button(
-        file='./assets/cn/relics/ui/ENHANCE_CHECK.png',
-        area=(1134, 645, 1185, 670),
-        search=(1114, 625, 1205, 690),
-        color=(179, 180, 180),
-        button=(1134, 645, 1185, 670),
-    ),
     en=Button(
         file='./assets/en/relics/ui/ENHANCE_CHECK.png',
         area=(1115, 646, 1204, 671),
@@ -42,13 +35,6 @@ ENHANCE_GOTO_SALVAGE = ButtonWrapper(
 )
 FILTER_CONFIRM = ButtonWrapper(
     name='FILTER_CONFIRM',
-    cn=Button(
-        file='./assets/cn/relics/ui/FILTER_CONFIRM.png',
-        area=(1103, 651, 1151, 677),
-        search=(1083, 631, 1171, 697),
-        color=(180, 180, 180),
-        button=(1103, 651, 1151, 677),
-    ),
     en=Button(
         file='./assets/en/relics/ui/FILTER_CONFIRM.png',
         area=(1081, 652, 1172, 677),
@@ -59,13 +45,6 @@ FILTER_CONFIRM = ButtonWrapper(
 )
 FILTER_RESET = ButtonWrapper(
     name='FILTER_RESET',
-    cn=Button(
-        file='./assets/cn/relics/ui/FILTER_RESET.png',
-        area=(887, 652, 936, 675),
-        search=(867, 632, 956, 695),
-        color=(160, 160, 160),
-        button=(887, 652, 936, 675),
-    ),
     en=Button(
         file='./assets/en/relics/ui/FILTER_RESET.png',
         area=(879, 652, 946, 677),

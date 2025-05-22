@@ -25,13 +25,6 @@ CHARACTER_OPERATE = ButtonWrapper(
 )
 FRIENDS_CHECK = ButtonWrapper(
     name='FRIENDS_CHECK',
-    cn=Button(
-        file='./assets/cn/combat/support_dev/FRIENDS_CHECK.png',
-        area=(120, 84, 155, 100),
-        search=(100, 64, 175, 120),
-        color=(145, 144, 145),
-        button=(120, 84, 155, 100),
-    ),
     en=Button(
         file='./assets/en/combat/support_dev/FRIENDS_CHECK.png',
         area=(103, 85, 159, 99),
@@ -42,13 +35,6 @@ FRIENDS_CHECK = ButtonWrapper(
 )
 FRIENDS_CLICK = ButtonWrapper(
     name='FRIENDS_CLICK',
-    cn=Button(
-        file='./assets/cn/combat/support_dev/FRIENDS_CLICK.png',
-        area=(121, 84, 155, 100),
-        search=(101, 64, 175, 120),
-        color=(134, 128, 125),
-        button=(121, 84, 155, 100),
-    ),
     en=Button(
         file='./assets/en/combat/support_dev/FRIENDS_CLICK.png',
         area=(103, 85, 159, 100),
@@ -97,13 +83,6 @@ LIST_REFRESHED = ButtonWrapper(
 )
 STRANGER_CHECK = ButtonWrapper(
     name='STRANGER_CHECK',
-    cn=Button(
-        file='./assets/cn/combat/support_dev/STRANGER_CHECK.png',
-        area=(332, 84, 383, 100),
-        search=(312, 64, 403, 120),
-        color=(159, 157, 159),
-        button=(332, 84, 383, 100),
-    ),
     en=Button(
         file='./assets/en/combat/support_dev/STRANGER_CHECK.png',
         area=(311, 85, 388, 100),
@@ -114,13 +93,6 @@ STRANGER_CHECK = ButtonWrapper(
 )
 STRANGER_CLICK = ButtonWrapper(
     name='STRANGER_CLICK',
-    cn=Button(
-        file='./assets/cn/combat/support_dev/STRANGER_CLICK.png',
-        area=(332, 84, 383, 100),
-        search=(312, 64, 403, 120),
-        color=(123, 116, 114),
-        button=(332, 84, 383, 100),
-    ),
     en=Button(
         file='./assets/en/combat/support_dev/STRANGER_CLICK.png',
         area=(311, 85, 388, 100),

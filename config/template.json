@@ -7,7 +7,6 @@
       "GameLanguage": "auto",
       "ScreenshotMethod": "scrcpy",
       "ControlMethod": "MaaTouch",
-      "CloudPriorQueue": false,
       "AdbRestart": false
     },
     "EmulatorInfo": {

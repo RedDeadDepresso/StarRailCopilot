@@ -115,13 +115,6 @@ REWARDS_CHECK = ButtonWrapper(
 )
 REWARDS_CLAIM_ALL = ButtonWrapper(
     name='REWARDS_CLAIM_ALL',
-    cn=Button(
-        file='./assets/cn/battle_pass/REWARDS_CLAIM_ALL.png',
-        area=(827, 665, 907, 684),
-        search=(807, 645, 927, 704),
-        color=(172, 136, 69),
-        button=(827, 665, 907, 684),
-    ),
     en=Button(
         file='./assets/en/battle_pass/REWARDS_CLAIM_ALL.png',
         area=(822, 666, 910, 682),

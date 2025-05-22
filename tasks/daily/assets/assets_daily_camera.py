@@ -5,13 +5,6 @@ from module.base.button import Button, ButtonWrapper
 
 PICTURE_TAKEN = ButtonWrapper(
     name='PICTURE_TAKEN',
-    cn=Button(
-        file='./assets/cn/daily/camera/PICTURE_TAKEN.png',
-        area=(1030, 620, 1069, 639),
-        search=(1010, 600, 1089, 659),
-        color=(153, 153, 155),
-        button=(1030, 620, 1069, 639),
-    ),
     en=Button(
         file='./assets/en/daily/camera/PICTURE_TAKEN.png',
         area=(1027, 622, 1072, 638),

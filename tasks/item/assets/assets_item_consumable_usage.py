@@ -35,13 +35,6 @@ SIMPLE_PROTECTIVE_GEAR_CHECK = ButtonWrapper(
 )
 USE_CONSUMABLE = ButtonWrapper(
     name='USE_CONSUMABLE',
-    cn=Button(
-        file='./assets/cn/item/consumable_usage/USE_CONSUMABLE.png',
-        area=(1042, 647, 1084, 669),
-        search=(1022, 627, 1104, 689),
-        color=(158, 158, 159),
-        button=(1042, 647, 1084, 669),
-    ),
     en=Button(
         file='./assets/en/item/consumable_usage/USE_CONSUMABLE.png',
         area=(1037, 643, 1091, 672),

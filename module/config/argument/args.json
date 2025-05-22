@@ -10,8 +10,7 @@
         "type": "select",
         "value": "android",
         "option": [
-          "android",
-          "cloud_android"
+          "android"
         ]
       },
       "PackageName": {
@@ -19,12 +18,7 @@
         "value": "auto",
         "option": [
           "auto",
-          "CN-Official",
-          "CN-Bilibili",
-          "OVERSEA-America",
-          "OVERSEA-Asia",
-          "OVERSEA-Europe",
-          "OVERSEA-TWHKMO"
+          "Global"
         ]
       },
       "GameLanguage": {
@@ -32,7 +26,6 @@
         "value": "auto",
         "option": [
           "auto",
-          "cn",
           "en"
         ]
       },
@@ -61,10 +54,6 @@
           "MaaTouch"
         ],
         "display": "hide"
-      },
-      "CloudPriorQueue": {
-        "type": "checkbox",
-        "value": false
       },
       "AdbRestart": {
         "type": "checkbox",

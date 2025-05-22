@@ -5,22 +5,6 @@ from module.base.button import Button, ButtonWrapper
 
 ASSIGNMENT_START = ButtonWrapper(
     name='ASSIGNMENT_START',
-    cn=[
-        Button(
-            file='./assets/cn/assignment/dispatch/ASSIGNMENT_START.png',
-            area=(563, 341, 716, 376),
-            search=(552, 299, 725, 412),
-            color=(103, 92, 72),
-            button=(563, 341, 716, 376),
-        ),
-        Button(
-            file='./assets/cn/assignment/dispatch/ASSIGNMENT_START.2.png',
-            area=(579, 373, 702, 405),
-            search=(552, 299, 725, 412),
-            color=(84, 75, 59),
-            button=(579, 373, 702, 405),
-        ),
-    ],
     en=[
         Button(
             file='./assets/en/assignment/dispatch/ASSIGNMENT_START.png',
@@ -99,13 +83,6 @@ CHARACTER_2_SELECTED = ButtonWrapper(
 )
 CHARACTER_LIST = ButtonWrapper(
     name='CHARACTER_LIST',
-    cn=Button(
-        file='./assets/cn/assignment/dispatch/CHARACTER_LIST.png',
-        area=(90, 165, 170, 186),
-        search=(70, 145, 190, 206),
-        color=(156, 154, 152),
-        button=(90, 165, 170, 186),
-    ),
     en=Button(
         file='./assets/en/assignment/dispatch/CHARACTER_LIST.png',
         area=(91, 163, 136, 180),
@@ -126,13 +103,6 @@ CHARACTER_SUPPORT = ButtonWrapper(
 )
 CHARACTER_SUPPORT_LIST = ButtonWrapper(
     name='CHARACTER_SUPPORT_LIST',
-    cn=Button(
-        file='./assets/cn/assignment/dispatch/CHARACTER_SUPPORT_LIST.png',
-        area=(91, 166, 171, 186),
-        search=(71, 146, 191, 206),
-        color=(147, 146, 143),
-        button=(91, 166, 171, 186),
-    ),
     en=Button(
         file='./assets/en/assignment/dispatch/CHARACTER_SUPPORT_LIST.png',
         area=(90, 167, 267, 189),
@@ -153,13 +123,6 @@ CHARACTER_SUPPORT_SELECTED = ButtonWrapper(
 )
 CONFIRM_ASSIGNMENT = ButtonWrapper(
     name='CONFIRM_ASSIGNMENT',
-    cn=Button(
-        file='./assets/cn/assignment/dispatch/CONFIRM_ASSIGNMENT.png',
-        area=(1007, 660, 1085, 678),
-        search=(987, 640, 1105, 698),
-        color=(148, 148, 147),
-        button=(909, 651, 1184, 686),
-    ),
     en=Button(
         file='./assets/en/assignment/dispatch/CONFIRM_ASSIGNMENT.png',
         area=(946, 661, 1146, 677),

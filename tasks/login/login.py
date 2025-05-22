@@ -2,15 +2,12 @@ from module.base.timer import Timer
 from module.exception import GameNotRunningError
 from module.logger import logger
 from tasks.base.page import page_main
-from tasks.combat.assets.assets_combat_interact import MAP_LOADING
-from tasks.login.agreement import AgreementHandler
+from tasks.base.ui import UI
 from tasks.login.assets.assets_login import *
-from tasks.login.assets.assets_login_popup import ADVERTISE_Castorice, UNITY_ENGINE_ERROR
-from tasks.login.cloud import LoginAndroidCloud
-from tasks.rogue.blessing.ui import RogueUI
+from tasks.login.assets.assets_login_popup import *
 
 
-class Login(LoginAndroidCloud, RogueUI, AgreementHandler):
+class Login(UI):
     def _handle_app_login(self):
         """
         Pages:
@@ -27,7 +24,6 @@ class Login(LoginAndroidCloud, RogueUI, AgreementHandler):
         startup_timer = Timer(5).start()
         app_timer = Timer(5).start()
         login_success = False
-        first_map_loading = True
         self.device.stuck_record_clear()
 
         while 1:
@@ -59,20 +55,7 @@ class Login(LoginAndroidCloud, RogueUI, AgreementHandler):
                 self.device.stuck_record_clear()
                 app_timer.reset()
                 orientation_timer.reset()
-            # Watch map loading
-            if first_map_loading and self.appear(MAP_LOADING, similarity=0.75):
-                logger.info('Map loading')
-                # Reset stuck record after map loading to extend wait time on slow devices
-                self.device.stuck_record_clear()
-                first_map_loading = False
-                continue
 
-            # Error
-            # Unable to initialize Unity Engine
-            if self.match_template_luma(UNITY_ENGINE_ERROR):
-                logger.error('Unable to initialize Unity Engine')
-                self.device.app_stop()
-                raise GameNotRunningError('Unable to initialize Unity Engine')
             # Login
             if self.is_in_login_confirm(interval=5):
                 self.device.click(LOGIN_CONFIRM)
@@ -80,44 +63,17 @@ class Login(LoginAndroidCloud, RogueUI, AgreementHandler):
                 self.device.stuck_record_clear()
                 login_success = True
                 continue
-            if self.handle_user_agreement():
-                continue
-            # Additional
-            if self.handle_popup_single():
-                continue
-            if self.handle_popup_confirm():
-                continue
-            if self.ui_additional():
-                continue
             if self.handle_login_popup():
-                continue
-            if self.handle_blessing():
                 continue
 
         return True
-
-    def handle_account_confirm(self):
-        """
-        ACCOUNT_CONFIRM is not a multi-server assets as text language is not detected before log in.
-        It just detects all languages.
-
-        ACCOUNT_CONFIRM doesn't appear in most times, sometimes game client won't auto login but requiring you to
-        click login even if there is only one account.
-
-        Returns:
-            bool: If clicked
-        """
-        if self.appear_then_click(ACCOUNT_CONFIRM):
-            return True
-        return False
 
     def handle_login_popup(self):
         """
         Returns:
             bool: If clicked
         """
-        # 3.2 Castorice popup that advertise you go gacha, but no, close it
-        if self.handle_ui_close(ADVERTISE_Castorice, interval=2):
+        if self.handle_ui_close(MAIN_POPUP, interval=2):
             return True
         return False
 

@@ -35,13 +35,6 @@ MENU_TO_PROFILE = ButtonWrapper(
 )
 PROFILE = ButtonWrapper(
     name='PROFILE',
-    cn=Button(
-        file='./assets/cn/freebies/support_reward/PROFILE.png',
-        area=(890, 99, 1111, 131),
-        search=(870, 79, 1131, 151),
-        color=(205, 206, 206),
-        button=(890, 99, 1111, 131),
-    ),
     en=Button(
         file='./assets/en/freebies/support_reward/PROFILE.png',
         area=(907, 102, 1092, 132),
