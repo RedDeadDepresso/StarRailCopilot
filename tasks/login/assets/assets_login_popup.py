@@ -10,6 +10,6 @@ MAIN_POPUP = ButtonWrapper(
         area=(142, 94, 179, 125),
         search=(122, 74, 199, 145),
         color=(184, 130, 87),
-        button=(1224, 23, 1257, 58),
+        button=(142, 94, 179, 125),
     ),
 )
