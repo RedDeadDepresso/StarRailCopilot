@@ -12,7 +12,8 @@
     "page": "setting",
     "tasks": [
       "DataUpdate",
-      "Freebies"
+      "Freebies",
+      "Production"
     ]
   }
 }

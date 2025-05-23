@@ -27,3 +27,6 @@ Daily:
       - ItemStorage
     Freebies:
       - Scheduler
+    Production:
+      - Scheduler
+      - ProductionInterval

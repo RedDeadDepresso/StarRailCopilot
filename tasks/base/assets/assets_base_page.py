@@ -73,16 +73,6 @@ ARENA_CHECK = ButtonWrapper(
         button=(464, 658, 631, 692),
     ),
 )
-ASSIGNMENT_CHECK = ButtonWrapper(
-    name='ASSIGNMENT_CHECK',
-    en=Button(
-        file='./assets/en/base/page/ASSIGNMENT_CHECK.png',
-        area=(535, 165, 581, 180),
-        search=(515, 145, 601, 200),
-        color=(204, 195, 176),
-        button=(535, 165, 581, 180),
-    ),
-)
 BALLOON_CHECK = ButtonWrapper(
     name='BALLOON_CHECK',
     share=Button(
@@ -105,8 +95,8 @@ CLOSE = ButtonWrapper(
 )
 DASHBOARD_CHECK = ButtonWrapper(
     name='DASHBOARD_CHECK',
-    share=Button(
-        file='./assets/share/base/page/DASHBOARD_CHECK.png',
+    en=Button(
+        file='./assets/en/base/page/DASHBOARD_CHECK.png',
         area=(356, 656, 632, 707),
         search=(336, 636, 652, 720),
         color=(94, 102, 133),
@@ -127,10 +117,10 @@ EXPLORATION_GOTO_ADVENTURES = ButtonWrapper(
     name='EXPLORATION_GOTO_ADVENTURES',
     share=Button(
         file='./assets/share/base/page/EXPLORATION_GOTO_ADVENTURES.png',
-        area=(1160, 620, 1257, 695),
-        search=(1140, 600, 1277, 715),
-        color=(147, 112, 95),
-        button=(1160, 620, 1257, 695),
+        area=(1160, 620, 1257, 676),
+        search=(1140, 600, 1277, 696),
+        color=(162, 114, 89),
+        button=(1160, 620, 1257, 676),
     ),
 )
 GACHA_CHECK = ButtonWrapper(
@@ -147,10 +137,10 @@ MAIN_GOTO_ADVENTURES = ButtonWrapper(
     name='MAIN_GOTO_ADVENTURES',
     share=Button(
         file='./assets/share/base/page/MAIN_GOTO_ADVENTURES.png',
-        area=(1008, 616, 1258, 697),
-        search=(988, 596, 1278, 717),
-        color=(94, 111, 128),
-        button=(1008, 616, 1258, 697),
+        area=(1008, 616, 1091, 697),
+        search=(988, 596, 1111, 717),
+        color=(130, 135, 132),
+        button=(1008, 616, 1091, 697),
     ),
 )
 MAIN_GOTO_AFFAIRS = ButtonWrapper(
@@ -205,8 +195,8 @@ PAVILION_CHECK = ButtonWrapper(
 )
 SHOP_CHECK = ButtonWrapper(
     name='SHOP_CHECK',
-    share=Button(
-        file='./assets/share/base/page/SHOP_CHECK.png',
+    en=Button(
+        file='./assets/en/base/page/SHOP_CHECK.png',
         area=(14, 12, 104, 58),
         search=(0, 0, 124, 78),
         color=(69, 69, 73),

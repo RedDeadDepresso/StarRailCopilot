@@ -25,6 +25,10 @@
     "Freebies": {
       "name": "免費獎勵",
       "help": ""
+    },
+    "Production": {
+      "name": "Task.Production.name",
+      "help": "Task.Production.help"
     }
   },
   "Scheduler": {
@@ -200,6 +204,16 @@
     "Crystal": {
       "name": "ItemStorage.Crystal.name",
       "help": "ItemStorage.Crystal.help"
+    }
+  },
+  "ProductionInterval": {
+    "_info": {
+      "name": "ProductionInterval._info.name",
+      "help": "ProductionInterval._info.help"
+    },
+    "value": {
+      "name": "ProductionInterval.value.name",
+      "help": "ProductionInterval.value.help"
     }
   },
   "Gui": {

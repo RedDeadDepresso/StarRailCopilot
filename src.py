@@ -34,6 +34,10 @@ class StarRailCopilot(AzurLaneAutoScript):
         from tasks.freebies.freebies import Freebies
         Freebies(config=self.config, device=self.device).run()
 
+    def production(self):
+        from tasks.production.production import Production
+        Production(config=self.config, device=self.device).run()
+
 
 if __name__ == '__main__':
     src = StarRailCopilot('src')

@@ -10,7 +10,7 @@ class ManualConfig:
 
     SCHEDULER_PRIORITY = """
     Restart
-    > Freebies > DataUpdate
+    > Freebies > DataUpdate > Production
     """
 
     """

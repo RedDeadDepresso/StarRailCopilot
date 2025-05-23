@@ -55,5 +55,16 @@
       "Command": "Freebies",
       "ServerUpdate": "04:00"
     }
+  },
+  "Production": {
+    "Scheduler": {
+      "Enable": false,
+      "NextRun": "2020-01-01 00:00:00",
+      "Command": "Production",
+      "ServerUpdate": "04:00"
+    },
+    "ProductionInterval": {
+      "value": 10
+    }
   }
 }

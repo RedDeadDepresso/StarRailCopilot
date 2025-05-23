@@ -45,3 +45,6 @@ class GeneratedConfig:
     ItemStorage_JuicyStaminaJelly = {}
     ItemStorage_Coin = {}
     ItemStorage_Crystal = {}
+
+    # Group `ProductionInterval`
+    ProductionInterval_value = 10

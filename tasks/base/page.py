@@ -81,6 +81,11 @@ page_affairs = Page(AFFAIRS_GOTO_DEPTHS)
 page_affairs.link(CLOSE, destination=page_main)
 page_main.link(MAIN_GOTO_AFFAIRS, destination=page_affairs)
 
+# Dashboard
+page_dashboard = Page(DASHBOARD_CHECK)
+page_dashboard.link(CLOSE, destination=page_main)
+page_main.link(MAIN_GOTO_DASHBOARD, destination=page_dashboard)
+
 # Depths
 page_depths = Page(DEPTHS_CHECK)
 page_depths.link(CLOSE, destination=page_main)

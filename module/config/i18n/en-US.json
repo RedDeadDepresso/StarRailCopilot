@@ -25,6 +25,10 @@
     "Freebies": {
       "name": "Freebies",
       "help": ""
+    },
+    "Production": {
+      "name": "Production",
+      "help": ""
     }
   },
   "Scheduler": {
@@ -199,6 +203,16 @@
     },
     "Crystal": {
       "name": "Crystal",
+      "help": ""
+    }
+  },
+  "ProductionInterval": {
+    "_info": {
+      "name": "Interval",
+      "help": ""
+    },
+    "value": {
+      "name": "Reschedule production every X minutes",
       "help": ""
     }
   },

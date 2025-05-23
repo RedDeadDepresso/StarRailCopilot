@@ -111,3 +111,6 @@ ItemStorage:
     order: 4
     color: "#21befc"
     display: display
+
+ProductionInterval:
+  value: 10
