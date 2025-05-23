@@ -94,12 +94,12 @@ page_affairs.link(AFFAIRS_GOTO_DEPTHS, destination=page_depths)
 # Balloon
 page_balloon = Page(BALLOON_CHECK)
 page_balloon.link(CLOSE, destination=page_main)
-page_affairs.link(AFFAIRS_GOTO_BALLOON, destination=page_depths)
+page_affairs.link(AFFAIRS_GOTO_BALLOON, destination=page_balloon)
 
 # Pavilion
 page_pavilion = Page(PAVILION_CHECK)
 page_pavilion.link(CLOSE, destination=page_main)
-page_affairs.link(AFFAIRS_GOTO_PAVILION, destination=page_depths)
+page_affairs.link(AFFAIRS_GOTO_PAVILION, destination=page_pavilion)
 
 # Shop
 page_shop = Page(SHOP_CHECK)

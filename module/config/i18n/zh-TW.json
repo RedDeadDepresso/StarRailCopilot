@@ -29,6 +29,10 @@
     "Production": {
       "name": "Task.Production.name",
       "help": "Task.Production.help"
+    },
+    "Balloon": {
+      "name": "Task.Balloon.name",
+      "help": "Task.Balloon.help"
     }
   },
   "Scheduler": {

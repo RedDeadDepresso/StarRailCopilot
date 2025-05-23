@@ -30,3 +30,5 @@ Daily:
     Production:
       - Scheduler
       - ProductionInterval
+    Balloon:
+      - Scheduler

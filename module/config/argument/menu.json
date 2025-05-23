@@ -13,7 +13,8 @@
     "tasks": [
       "DataUpdate",
       "Freebies",
-      "Production"
+      "Production",
+      "Balloon"
     ]
   }
 }

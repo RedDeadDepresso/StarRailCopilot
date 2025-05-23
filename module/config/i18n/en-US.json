@@ -29,6 +29,10 @@
     "Production": {
       "name": "Production",
       "help": ""
+    },
+    "Balloon": {
+      "name": "Balloon",
+      "help": ""
     }
   },
   "Scheduler": {

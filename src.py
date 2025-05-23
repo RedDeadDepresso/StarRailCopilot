@@ -38,6 +38,10 @@ class StarRailCopilot(AzurLaneAutoScript):
         from tasks.production.production import Production
         Production(config=self.config, device=self.device).run()
 
+    def balloon(self):
+        from tasks.balloon.balloon import Balloon
+        Balloon(config=self.config, device=self.device).run()
+
 
 if __name__ == '__main__':
     src = StarRailCopilot('src')

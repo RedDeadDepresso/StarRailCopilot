@@ -9,8 +9,8 @@ class ManualConfig:
         return server.lang
 
     SCHEDULER_PRIORITY = """
-    Restart
-    > Freebies > DataUpdate > Production
+    Restart >
+    Balloon > Freebies > DataUpdate > Production
     """
 
     """

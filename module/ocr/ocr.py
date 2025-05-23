@@ -376,18 +376,13 @@ class Duration(Ocr):
     @classmethod
     def timedelta_regex(cls, lang):
         regex_str = {
-            'cn': r'^(?P<prefix>.*?)'
-                  r'((?P<days>\d{1,2})\s*天\s*)?'
-                  r'((?P<hours>\d{1,2})\s*小时\s*)?'
-                  r'((?P<minutes>\d{1,2})\s*分钟\s*)?'
-                  r'((?P<seconds>\d{1,2})\s*秒)?'
-                  r'(?P<suffix>[^天时钟秒]*?)$',
-            'en': r'^(?P<prefix>.*?)'
+            'en': 
+                  r'^(?P<prefix>.*?)'
                   r'((?P<days>\d{1,2})\s*d\s*)?'
-                  r'((?P<hours>\d{1,2})\s*h\s*)?'
-                  r'((?P<minutes>\d{1,2})\s*m\s*)?'
-                  r'((?P<seconds>\d{1,2})\s*s)?'
-                  r'(?P<suffix>[^dhms]*?)$'
+                  r'((?P<hours>\d{1,2})\s*(h|hr)\s*)?'
+                  r'((?P<minutes>\d{1,2})\s*(m|min)\s*)?'
+                  r'((?P<seconds>\d{1,2})\s*(s|sec))?'
+                  r'(?P<suffix>[^dhmsrcein]*?)$'
         }[lang]
         return re.compile(regex_str)
 
