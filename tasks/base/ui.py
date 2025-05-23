@@ -5,7 +5,7 @@ from module.exception import GameNotRunningError, GamePageUnknownError, HandledE
 from module.logger import logger
 from module.ocr.ocr import Ocr
 from tasks.base.assets.assets_base_main_page import ROGUE_LEAVE_FOR_NOW, ROGUE_LEAVE_FOR_NOW_OE
-from tasks.base.assets.assets_base_page import CLOSE, MAIN_GOTO_CHARACTER, MAP_EXIT, MAP_EXIT_OE
+from tasks.base.assets.assets_base_page import CLOSE, MAIN_GOTO_ADVENTURES
 from tasks.base.assets.assets_base_popup import POPUP_STORY_LATER
 from tasks.base.main_page import MainPage
 from tasks.base.page import Page, page_gacha, page_main
@@ -192,8 +192,6 @@ class UI(MainPage):
         logger.hr("UI ensure")
         self.ui_get_current_page(skip_first_screenshot=skip_first_screenshot)
 
-        self.ui_leave_special()
-
         if acquire_lang_checked:
             if self.acquire_lang_checked():
                 self.ui_get_current_page(skip_first_screenshot=skip_first_screenshot)
@@ -312,22 +310,18 @@ class UI(MainPage):
                     continue
 
     def is_in_main(self, interval=0):
-        self.device.stuck_record_add(MAIN_GOTO_CHARACTER)
+        self.device.stuck_record_add(MAIN_GOTO_ADVENTURES)
 
-        if interval and not self.interval_is_reached(MAIN_GOTO_CHARACTER, interval=interval):
+        if interval and not self.interval_is_reached(MAIN_GOTO_ADVENTURES, interval=interval):
             return False
 
         appear = False
-        if MAIN_GOTO_CHARACTER.match_template_luma(self.device.image):
-            if self.image_color_count(MAIN_GOTO_CHARACTER, color=(235, 235, 235), threshold=234, count=400):
+        if MAIN_GOTO_ADVENTURES.match_template_luma(self.device.image):
+            if self.image_color_count(MAIN_GOTO_ADVENTURES, color=(235, 235, 235), threshold=234, count=400):
                 appear = True
-        if not appear:
-            if MAP_EXIT.match_template_luma(self.device.image):
-                if self.image_color_count(MAP_EXIT, color=(235, 235, 235), threshold=221, count=50):
-                    appear = True
 
         if appear and interval:
-            self.interval_reset(MAIN_GOTO_CHARACTER, interval=interval)
+            self.interval_reset(MAIN_GOTO_ADVENTURES, interval=interval)
 
         return appear
 
@@ -341,25 +335,6 @@ class UI(MainPage):
 
         if appear and interval:
             self.interval_reset(LOGIN_CONFIRM, interval=interval)
-
-        return appear
-
-    def is_in_map_exit(self, interval=0):
-        self.device.stuck_record_add(MAP_EXIT)
-
-        if interval and not self.interval_is_reached(MAP_EXIT, interval=interval):
-            return False
-
-        appear = False
-        if MAP_EXIT.match_template_luma(self.device.image):
-            if self.image_color_count(MAP_EXIT, color=(235, 235, 235), threshold=221, count=50):
-                appear = True
-        if MAP_EXIT_OE.match_template_luma(self.device.image):
-            if self.image_color_count(MAP_EXIT_OE, color=(235, 235, 235), threshold=221, count=50):
-                appear = True
-
-        if appear and interval:
-            self.interval_reset(MAP_EXIT, interval=interval)
 
         return appear
 
@@ -465,9 +440,6 @@ class UI(MainPage):
             in: Any
             out: page_main
         """
-        if not self.is_in_map_exit():
-            return False
-
         logger.info('UI leave special')
         skip_first_screenshot = True
         clicked = False
@@ -483,9 +455,6 @@ class UI(MainPage):
                     logger.info(f'Leave to {page_main}')
                     break
 
-            if self.is_in_map_exit(interval=2):
-                self.device.click(MAP_EXIT)
-                continue
             if self.handle_popup_confirm():
                 clicked = True
                 continue
