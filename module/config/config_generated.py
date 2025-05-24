@@ -48,3 +48,12 @@ class GeneratedConfig:
 
     # Group `ProductionInterval`
     ProductionInterval_value = 10
+
+    # Group `ShopGift`
+    ShopGift_Enable = False
+
+    # Group `GachaGift`
+    GachaGift_Enable = False
+
+    # Group `Mailbox`
+    Mailbox_Enable = False

@@ -133,6 +133,16 @@ GACHA_CHECK = ButtonWrapper(
         button=(39, 18, 84, 51),
     ),
 )
+MAILBOX_CHECK = ButtonWrapper(
+    name='MAILBOX_CHECK',
+    en=Button(
+        file='./assets/en/base/page/MAILBOX_CHECK.png',
+        area=(570, 33, 707, 77),
+        search=(550, 13, 727, 97),
+        color=(87, 93, 114),
+        button=(570, 33, 707, 77),
+    ),
+)
 MAIN_GOTO_ADVENTURES = ButtonWrapper(
     name='MAIN_GOTO_ADVENTURES',
     share=Button(
@@ -171,6 +181,16 @@ MAIN_GOTO_GACHA = ButtonWrapper(
         search=(598, 618, 687, 691),
         color=(107, 63, 54),
         button=(618, 638, 667, 671),
+    ),
+)
+MAIN_GOTO_MAILBOX = ButtonWrapper(
+    name='MAIN_GOTO_MAILBOX',
+    share=Button(
+        file='./assets/share/base/page/MAIN_GOTO_MAILBOX.png',
+        area=(1080, 35, 1129, 53),
+        search=(1060, 15, 1149, 73),
+        color=(215, 191, 171),
+        button=(1080, 35, 1129, 53),
     ),
 )
 MAIN_GOTO_SHOP = ButtonWrapper(

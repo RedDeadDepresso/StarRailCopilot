@@ -110,3 +110,8 @@ page_main.link(MAIN_GOTO_SHOP, destination=page_shop)
 page_gacha = Page(GACHA_CHECK)
 page_gacha.link(CLOSE, destination=page_main)
 page_main.link(MAIN_GOTO_GACHA, destination=page_gacha)
+
+# Mailbox
+page_mailbox = Page(MAILBOX_CHECK)
+page_mailbox.link(CLOSE, destination=page_main)
+page_main.link(MAIN_GOTO_MAILBOX, destination=page_mailbox)

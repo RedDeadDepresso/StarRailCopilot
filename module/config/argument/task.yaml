@@ -27,6 +27,9 @@ Daily:
       - ItemStorage
     Freebies:
       - Scheduler
+      - ShopGift
+      - GachaGift
+      - Mailbox
     Production:
       - Scheduler
       - ProductionInterval

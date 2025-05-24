@@ -54,6 +54,15 @@
       "NextRun": "2020-01-01 00:00:00",
       "Command": "Freebies",
       "ServerUpdate": "04:00"
+    },
+    "ShopGift": {
+      "Enable": false
+    },
+    "GachaGift": {
+      "Enable": false
+    },
+    "Mailbox": {
+      "Enable": false
     }
   },
   "Production": {

@@ -220,6 +220,36 @@
       "help": "ProductionInterval.value.help"
     }
   },
+  "ShopGift": {
+    "_info": {
+      "name": "ShopGift._info.name",
+      "help": "ShopGift._info.help"
+    },
+    "Enable": {
+      "name": "ShopGift.Enable.name",
+      "help": "ShopGift.Enable.help"
+    }
+  },
+  "GachaGift": {
+    "_info": {
+      "name": "GachaGift._info.name",
+      "help": "GachaGift._info.help"
+    },
+    "Enable": {
+      "name": "GachaGift.Enable.name",
+      "help": "GachaGift.Enable.help"
+    }
+  },
+  "Mailbox": {
+    "_info": {
+      "name": "Mailbox._info.name",
+      "help": "Mailbox._info.help"
+    },
+    "Enable": {
+      "name": "Mailbox.Enable.name",
+      "help": "Mailbox.Enable.help"
+    }
+  },
   "Gui": {
     "Aside": {
       "Install": "Instalar",

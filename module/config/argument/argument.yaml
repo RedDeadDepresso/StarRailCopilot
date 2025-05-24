@@ -114,3 +114,12 @@ ItemStorage:
 
 ProductionInterval:
   value: 10
+
+ShopGift:
+  Enable: false
+
+GachaGift:
+  Enable: false
+
+Mailbox:
+  Enable: false

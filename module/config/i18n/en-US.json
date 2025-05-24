@@ -220,6 +220,36 @@
       "help": ""
     }
   },
+  "ShopGift": {
+    "_info": {
+      "name": "Shop Gift",
+      "help": ""
+    },
+    "Enable": {
+      "name": "Enable",
+      "help": ""
+    }
+  },
+  "GachaGift": {
+    "_info": {
+      "name": "Gacha Gift",
+      "help": ""
+    },
+    "Enable": {
+      "name": "Enable",
+      "help": ""
+    }
+  },
+  "Mailbox": {
+    "_info": {
+      "name": "Mailbox",
+      "help": ""
+    },
+    "Enable": {
+      "name": "Enable",
+      "help": ""
+    }
+  },
   "Gui": {
     "Aside": {
       "Install": "Install",
