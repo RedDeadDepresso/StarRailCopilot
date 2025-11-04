@@ -33,6 +33,10 @@
     "Balloon": {
       "name": "Balloon",
       "help": ""
+    },
+    "Guild": {
+      "name": "Guild",
+      "help": ""
     }
   },
   "Scheduler": {
@@ -243,6 +247,36 @@
   "Mailbox": {
     "_info": {
       "name": "Mailbox",
+      "help": ""
+    },
+    "Enable": {
+      "name": "Enable",
+      "help": ""
+    }
+  },
+  "GuildCheckIn": {
+    "_info": {
+      "name": "Check-in",
+      "help": ""
+    },
+    "Enable": {
+      "name": "Enable",
+      "help": ""
+    }
+  },
+  "GuildBattle": {
+    "_info": {
+      "name": "Battle",
+      "help": ""
+    },
+    "Enable": {
+      "name": "Enable",
+      "help": ""
+    }
+  },
+  "GuildGacha": {
+    "_info": {
+      "name": "Gacha",
       "help": ""
     },
     "Enable": {

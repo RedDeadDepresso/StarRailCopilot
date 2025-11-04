@@ -35,3 +35,9 @@ Daily:
       - ProductionInterval
     Balloon:
       - Scheduler
+    Guild:
+      - Scheduler
+      - GuildCheckIn
+      - GuildBattle
+      - GuildGacha
+    

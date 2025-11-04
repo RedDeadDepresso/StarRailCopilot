@@ -42,6 +42,10 @@ class StarRailCopilot(AzurLaneAutoScript):
         from tasks.balloon.balloon import Balloon
         Balloon(config=self.config, device=self.device).run()
 
+    def guild(self):
+        from tasks.guild.guild import Guild
+        Guild(config=self.config, device=self.device).run()
+
 
 if __name__ == '__main__':
     src = StarRailCopilot('src')

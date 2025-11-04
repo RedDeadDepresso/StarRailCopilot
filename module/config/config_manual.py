@@ -10,7 +10,7 @@ class ManualConfig:
 
     SCHEDULER_PRIORITY = """
     Restart >
-    Balloon > Freebies > DataUpdate > Production
+    Balloon > Guild > Freebies > DataUpdate > Production
     """
 
     """

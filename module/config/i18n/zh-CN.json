@@ -33,6 +33,10 @@
     "Balloon": {
       "name": "Task.Balloon.name",
       "help": "Task.Balloon.help"
+    },
+    "Guild": {
+      "name": "Task.Guild.name",
+      "help": "Task.Guild.help"
     }
   },
   "Scheduler": {
@@ -248,6 +252,36 @@
     "Enable": {
       "name": "Mailbox.Enable.name",
       "help": "Mailbox.Enable.help"
+    }
+  },
+  "GuildCheckIn": {
+    "_info": {
+      "name": "GuildCheckIn._info.name",
+      "help": "GuildCheckIn._info.help"
+    },
+    "Enable": {
+      "name": "GuildCheckIn.Enable.name",
+      "help": "GuildCheckIn.Enable.help"
+    }
+  },
+  "GuildBattle": {
+    "_info": {
+      "name": "GuildBattle._info.name",
+      "help": "GuildBattle._info.help"
+    },
+    "Enable": {
+      "name": "GuildBattle.Enable.name",
+      "help": "GuildBattle.Enable.help"
+    }
+  },
+  "GuildGacha": {
+    "_info": {
+      "name": "GuildGacha._info.name",
+      "help": "GuildGacha._info.help"
+    },
+    "Enable": {
+      "name": "GuildGacha.Enable.name",
+      "help": "GuildGacha.Enable.help"
     }
   },
   "Gui": {

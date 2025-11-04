@@ -133,6 +133,56 @@ GACHA_CHECK = ButtonWrapper(
         button=(39, 18, 84, 51),
     ),
 )
+GUILD_BATTLE_CHECK = ButtonWrapper(
+    name='GUILD_BATTLE_CHECK',
+    share=Button(
+        file='./assets/share/base/page/GUILD_BATTLE_CHECK.png',
+        area=(620, 19, 655, 59),
+        search=(600, 0, 675, 79),
+        color=(142, 116, 197),
+        button=(620, 19, 655, 59),
+    ),
+)
+GUILD_GACHA_CHECK = ButtonWrapper(
+    name='GUILD_GACHA_CHECK',
+    share=Button(
+        file='./assets/share/base/page/GUILD_GACHA_CHECK.png',
+        area=(1032, 17, 1074, 60),
+        search=(1012, 0, 1094, 80),
+        color=(159, 158, 218),
+        button=(1032, 17, 1074, 60),
+    ),
+)
+GUILD_GOTO_GUILD_BATTLE = ButtonWrapper(
+    name='GUILD_GOTO_GUILD_BATTLE',
+    share=Button(
+        file='./assets/share/base/page/GUILD_GOTO_GUILD_BATTLE.png',
+        area=(280, 641, 334, 672),
+        search=(260, 621, 354, 692),
+        color=(136, 79, 90),
+        button=(280, 641, 334, 672),
+    ),
+)
+GUILD_GOTO_GUILD_GACHA = ButtonWrapper(
+    name='GUILD_GOTO_GUILD_GACHA',
+    share=Button(
+        file='./assets/share/base/page/GUILD_GOTO_GUILD_GACHA.png',
+        area=(867, 637, 903, 665),
+        search=(847, 617, 923, 685),
+        color=(155, 150, 200),
+        button=(867, 637, 903, 665),
+    ),
+)
+GUILD_GOTO_MAIN = ButtonWrapper(
+    name='GUILD_GOTO_MAIN',
+    share=Button(
+        file='./assets/share/base/page/GUILD_GOTO_MAIN.png',
+        area=(1156, 619, 1242, 666),
+        search=(1136, 599, 1262, 686),
+        color=(163, 114, 91),
+        button=(1156, 619, 1242, 666),
+    ),
+)
 MAILBOX_CHECK = ButtonWrapper(
     name='MAILBOX_CHECK',
     en=Button(
@@ -181,6 +231,16 @@ MAIN_GOTO_GACHA = ButtonWrapper(
         search=(598, 618, 687, 691),
         color=(107, 63, 54),
         button=(618, 638, 667, 671),
+    ),
+)
+MAIN_GOTO_GUILD = ButtonWrapper(
+    name='MAIN_GOTO_GUILD',
+    share=Button(
+        file='./assets/share/base/page/MAIN_GOTO_GUILD.png',
+        area=(521, 637, 557, 673),
+        search=(501, 617, 577, 693),
+        color=(205, 125, 9),
+        button=(521, 637, 557, 673),
     ),
 )
 MAIN_GOTO_MAILBOX = ButtonWrapper(

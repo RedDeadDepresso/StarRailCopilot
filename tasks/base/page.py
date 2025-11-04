@@ -115,3 +115,18 @@ page_main.link(MAIN_GOTO_GACHA, destination=page_gacha)
 page_mailbox = Page(MAILBOX_CHECK)
 page_mailbox.link(CLOSE, destination=page_main)
 page_main.link(MAIN_GOTO_MAILBOX, destination=page_mailbox)
+
+# Guild
+page_guild = Page(GUILD_GOTO_GUILD_BATTLE)
+page_guild.link(GUILD_GOTO_MAIN, destination=page_main)
+page_main.link(MAIN_GOTO_GUILD, destination=page_guild)
+
+# Guild Gacha
+page_guild_gacha = Page(GUILD_GACHA_CHECK)
+page_guild_gacha.link(CLOSE, destination=page_guild)
+page_guild.link(GUILD_GOTO_GUILD_GACHA, destination=page_guild_gacha)
+
+# Guild Battle
+page_guild_battle = Page(GUILD_BATTLE_CHECK)
+page_guild_battle.link(CLOSE, destination=page_guild)
+page_guild.link(GUILD_GOTO_GUILD_BATTLE, destination=page_guild_battle)

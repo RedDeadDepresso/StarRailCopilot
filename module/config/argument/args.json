@@ -188,7 +188,7 @@
       },
       "ServerUpdate": {
         "type": "input",
-        "value": "04:00",
+        "value": "23:00",
         "display": "hide"
       }
     },
@@ -249,7 +249,7 @@
       },
       "ServerUpdate": {
         "type": "input",
-        "value": "04:00",
+        "value": "23:00",
         "display": "hide"
       }
     },
@@ -294,7 +294,7 @@
       },
       "ServerUpdate": {
         "type": "input",
-        "value": "04:00",
+        "value": "23:00",
         "display": "hide"
       }
     },
@@ -327,8 +327,53 @@
       },
       "ServerUpdate": {
         "type": "input",
-        "value": "04:00",
+        "value": "23:00",
         "display": "hide"
+      }
+    }
+  },
+  "Guild": {
+    "Scheduler": {
+      "Enable": {
+        "type": "checkbox",
+        "value": false,
+        "option": [
+          true,
+          false
+        ]
+      },
+      "NextRun": {
+        "type": "datetime",
+        "value": "2020-01-01 00:00:00",
+        "validate": "datetime"
+      },
+      "Command": {
+        "type": "input",
+        "value": "Guild",
+        "display": "hide"
+      },
+      "ServerUpdate": {
+        "type": "input",
+        "value": "23:00",
+        "display": "hide"
+      }
+    },
+    "GuildCheckIn": {
+      "Enable": {
+        "type": "checkbox",
+        "value": false
+      }
+    },
+    "GuildBattle": {
+      "Enable": {
+        "type": "checkbox",
+        "value": false
+      }
+    },
+    "GuildGacha": {
+      "Enable": {
+        "type": "checkbox",
+        "value": false
       }
     }
   }

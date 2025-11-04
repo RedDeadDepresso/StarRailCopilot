@@ -8,11 +8,11 @@ Scheduler:
   Enable:
     type: checkbox
     value: false
-    option: [ true, false ]
+    option: [true, false]
   NextRun: 2020-01-01 00:00:00
   Command: Alas
   ServerUpdate:
-    value: 04:00
+    value: "23:00"
     display: hide
 Emulator:
   Serial:
@@ -20,51 +20,53 @@ Emulator:
     valuetype: str
   GameClient:
     value: android
-    option: [ android ]
+    option: [android]
   PackageName:
     value: auto
-    option: [ auto, ]
+    option: [auto]
   GameLanguage:
     value: auto
-    option: [ auto, en ]
+    option: [auto, en]
   ScreenshotMethod:
     value: auto
-    option: [
-      auto,
-      ADB,
-      ADB_nc,
-      uiautomator2,
-      aScreenCap,
-      aScreenCap_nc,
-      DroidCast,
-      DroidCast_raw,
-      scrcpy,
-      nemu_ipc,
-      ldopengl,
-    ]
+    option:
+      [
+        auto,
+        ADB,
+        ADB_nc,
+        uiautomator2,
+        aScreenCap,
+        aScreenCap_nc,
+        DroidCast,
+        DroidCast_raw,
+        scrcpy,
+        nemu_ipc,
+        ldopengl,
+      ]
   ControlMethod:
     value: MaaTouch
-    option: [ minitouch, MaaTouch ]
+    option: [minitouch, MaaTouch]
   AdbRestart: false
 EmulatorInfo:
   Emulator:
     value: auto
-    option: [
-      auto,
-      NoxPlayer,
-      NoxPlayer64,
-      BlueStacks4,
-      BlueStacks5,
-      BlueStacks4HyperV,
-      BlueStacks5HyperV,
-      LDPlayer3,
-      LDPlayer4,
-      LDPlayer9,
-      MuMuPlayer,
-      MuMuPlayerX,
-      MuMuPlayer12,
-      MEmuPlayer,
-    ]
+    option:
+      [
+        auto,
+        NoxPlayer,
+        NoxPlayer64,
+        BlueStacks4,
+        BlueStacks5,
+        BlueStacks4HyperV,
+        BlueStacks5HyperV,
+        LDPlayer3,
+        LDPlayer4,
+        LDPlayer9,
+        MuMuPlayer,
+        MuMuPlayerX,
+        MuMuPlayer12,
+        MEmuPlayer,
+      ]
   name:
     value: null
     type: textarea
@@ -74,19 +76,19 @@ EmulatorInfo:
 Error:
   Restart:
     value: game
-    option: [ game, game_emulator ]
+    option: [game, game_emulator]
   SaveError: true
   ScreenshotLength: 1
   OnePushConfig:
     type: textarea
     mode: yaml
-    value: 'provider: null'
+    value: "provider: null"
 Optimization:
   ScreenshotInterval: 0.3
   CombatScreenshotInterval: 1.0
   WhenTaskQueueEmpty:
     value: goto_main
-    option: [ stay_there, goto_main, close_game ]
+    option: [stay_there, goto_main, close_game]
 
 # ==================== Daily ====================
 
@@ -122,4 +124,13 @@ GachaGift:
   Enable: false
 
 Mailbox:
+  Enable: false
+
+GuildCheckIn:
+  Enable: false
+
+GuildBattle:
+  Enable: false
+
+GuildGacha:
   Enable: false

@@ -6,13 +6,6 @@ from tasks.combat.assets.assets_combat_finish import COMBAT_AGAIN, COMBAT_EXIT
 from tasks.combat.assets.assets_combat_interact import DUNGEON_COMBAT_INTERACT
 from tasks.combat.assets.assets_combat_prepare import COMBAT_PREPARE
 from tasks.combat.assets.assets_combat_team import COMBAT_TEAM_PREPARE, COMBAT_TEAM_SUPPORT
-from tasks.combat.fuel import Fuel
-from tasks.combat.interact import CombatInteract
-from tasks.combat.obtain import CombatObtain
-from tasks.combat.prepare import CombatPrepare
-from tasks.combat.skill import CombatSkill
-from tasks.combat.support import CombatSupport
-from tasks.combat.team import CombatTeam
 from tasks.dungeon.keywords import DungeonList
 from tasks.map.control.joystick import MapControlJoystick
 
